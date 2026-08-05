@@ -14,6 +14,16 @@
 
 ---
 
+## 快速导航（推荐）
+
+> **不想一层层点文件夹？** 打开汇总目录：
+>
+> ### 👉 [课程目录 目录.md](./目录.md)
+>
+> 一页列出全部 98 题：练习文件夹 / `教学.md` / 源码 / book / `cargo test -p …` 命令，点击即达。
+
+也可从 [CATALOG.md](./CATALOG.md) 跳转。
+
 ## 环境要求
 
 - [Rust 工具链](https://www.rust-lang.org/tools/install)（stable）
