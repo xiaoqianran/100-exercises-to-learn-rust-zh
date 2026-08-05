@@ -7,17 +7,14 @@ pub enum Command {
     Insert(todo!()),
 }
 
-// Start the system by spawning the server thread.
-// It returns a `Sender` instance which can then be used
-// by one or more clients to interact with the server.
+// 启动系统：spawn 服务端线程。
+// 返回 `Sender`，供一个或多个客户端与服务器交互。
 pub fn launch() -> Sender<Command> {
     let (sender, receiver) = std::sync::mpsc::channel();
     std::thread::spawn(move || server(receiver));
     sender
 }
 
-// TODO: The server task should **never** stop.
-//  Enter a loop: wait for a command to show up in
-//  the channel, then execute it, then start waiting
-//  for the next command.
+// TODO: 服务端任务应**永不**停止。
+//  循环：等待通道命令 → 执行 → 再等待下一条。
 pub fn server(receiver: Receiver<Command>) {}

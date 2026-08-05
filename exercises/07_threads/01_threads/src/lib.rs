@@ -1,17 +1,11 @@
-// TODO: implement a multi-threaded version of the `sum` function
-//  using `spawn` and `join`.
-//  Given a vector of integers, split the vector into two halves and
-//  sum each half in a separate thread.
+// TODO: 使用 `spawn` 与 `join` 实现多线程版 `sum`。
+//  将整数向量拆成两半，分别在独立线程中求和。
 
-// Caveat: We can't test *how* the function is implemented,
-// we can only verify that it produces the correct result.
-// You _could_ pass this test by just returning `v.iter().sum()`,
-// but that would defeat the purpose of the exercise.
+// 注意：测试无法验证「如何」实现，只能验证结果正确。
+// 你也可以 `v.iter().sum()` 蒙混过关，但那就失去练习意义。
 //
-// Hint: you won't be able to get the spawned threads to _borrow_
-// slices of the vector directly. You'll need to allocate new
-// vectors for each half of the original vector. We'll see why
-// this is necessary in the next exercise.
+// 提示：普通 spawn 难以直接借用向量切片，需要为两半分配新的 Vec。
+// 下一题会解释原因。
 use std::thread;
 
 pub fn sum(v: Vec<i32>) -> i32 {

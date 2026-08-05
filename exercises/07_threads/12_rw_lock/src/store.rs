@@ -33,8 +33,7 @@ impl TicketStore {
         id
     }
 
-    // The `get` method should return a handle to the ticket
-    // which allows the caller to either read or modify the ticket.
+    // `get` 应返回句柄，调用方可读可改。
     pub fn get(&self, id: TicketId) -> Option<Arc<Mutex<Ticket>>> {
         self.tickets.get(&id).cloned()
     }

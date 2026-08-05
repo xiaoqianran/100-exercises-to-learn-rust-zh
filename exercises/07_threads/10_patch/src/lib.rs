@@ -88,8 +88,7 @@ pub fn server(receiver: Receiver<Command>) {
                 todo!()
             }
             Err(_) => {
-                // There are no more senders, so we can safely break
-                // and shut down the server.
+                // 没有更多 sender，可安全退出并关闭服务器。
                 break;
             }
         }

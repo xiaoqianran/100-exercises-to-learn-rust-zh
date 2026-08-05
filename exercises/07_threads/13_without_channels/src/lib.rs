@@ -1,7 +1,6 @@
-// TODO: You don't actually have to change anything in the library itself!
-//  We mostly had to **remove** code (the client type, the launch function, the command enum)
-//  that's no longer necessary.
-//  Fix the `todo!()` in the testing code and see how the new design can be used.
+// TODO: 库本身几乎不用改！
+//  主要是**删除**不再需要的代码（client、launch、Command 等）。
+//  修好测试里的 `todo!()`，体验新设计用法。
 
 pub mod data;
 pub mod store;

@@ -1,7 +1,5 @@
-// TODO: Given a vector of integers, leak its heap allocation.
-//  Then split the resulting static slice into two halves and
-//  sum each half in a separate thread.
-//  Hint: check out `Vec::leak`.
+// TODO: 泄漏 Vec 的堆分配，得到 static 切片后分半并发求和。
+//  提示：`Vec::leak`。
 
 use std::thread;
 

@@ -1,4 +1,4 @@
-// Not much to be exercised on `Sync`, just a thing to remember.
+// `Sync` 可练的不多，记住概念即可。
 fn outro() -> &'static str {
     "I have a good understanding of __!"
 }
