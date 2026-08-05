@@ -1,9 +1,8 @@
-// Define a struct named `Order` with the following fields:
-// - `price`, an unsigned integer
-// - `quantity`, an unsigned integer
+// 定义结构体 `Order`，包含以下字段：
+// - `price`：无符号整数
+// - `quantity`：无符号整数
 //
-// It should also have a method named `is_available` that returns a `true` if the quantity is
-// greater than 0, otherwise `false`.
+// 还需要方法 `is_available`：当 quantity > 0 时返回 `true`，否则 `false`。
 
 #[cfg(test)]
 mod tests {

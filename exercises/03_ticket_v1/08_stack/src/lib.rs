@@ -1,5 +1,4 @@
-// TODO: based on what you learned in this section, replace `todo!()` with
-//  the correct **stack size** for the respective type.
+// TODO: 根据本节所学，将 `todo!()` 替换为对应类型的**栈占用字节数**。
 #[cfg(test)]
 mod tests {
     use std::mem::size_of;

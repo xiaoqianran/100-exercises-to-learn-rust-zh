@@ -30,10 +30,10 @@ pub mod ticket {
             }
         }
 
-        // TODO: Add three public methods to the `Ticket` struct:
-        //  - `title` that returns the `title` field.
-        //  - `description` that returns the `description` field.
-        //  - `status` that returns the `status` field.
+        // TODO: 为 `Ticket` 增加三个公开方法：
+        //  - `title`：返回 `title` 字段
+        //  - `description`：返回 `description` 字段
+        //  - `status`：返回 `status` 字段
     }
 }
 

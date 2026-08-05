@@ -32,42 +32,29 @@ mod ticket {
     }
 }
 
-// TODO: **Exceptionally**, you'll be modifying both the `ticket` module and the `tests` module
-//  in this exercise.
+// TODO: **本题例外**——需要同时修改 `ticket` 模块与 `tests` 模块。
 #[cfg(test)]
 mod tests {
-    // TODO: Add the necessary `pub` modifiers in the parent module to remove the compiler
-    //  errors about the use statement below.
+    // TODO: 在父模块加上必要的 `pub`，消除下面 `use` 的可见性错误。
     use super::ticket::Ticket;
 
-    // Be careful though! We don't want this function to compile after you have changed
-    // visibility to make the use statement compile!
-    // Once you have verified that it indeed doesn't compile, comment it out.
+    // 注意：让 `use` 通过后，我们仍希望下面函数**无法**编译！
+    // 验证确实不能编译后，再把它注释掉。
     fn should_not_be_possible() {
         let ticket = Ticket::new("A title".into(), "A description".into(), "To-Do".into());
 
-        // You should be seeing this error when trying to run this exercise:
-        //
+        // 你应看到类似错误：
         // error[E0616]: field `description` of struct `Ticket` is private
-        //    |
-        //    |              assert_eq!(ticket.description, "A description");
-        //    |                         ^^^^^^^^^^^^^^^^^^
         //
-        // TODO: Once you have verified that the below does not compile,
-        //   comment the line out to move on to the next exercise!
+        // TODO: 确认无法编译后，注释掉下面这行再继续。
         assert_eq!(ticket.description, "A description");
     }
 
     fn encapsulation_cannot_be_violated() {
-        // This should be impossible as well, with a similar error as the one encountered above.
-        // (It will throw a compilation error only after you have commented the faulty line
-        // in the previous test - next compilation stage!)
+        // 同样应无法编译：证明只能通过 `Ticket::new` 创建实例，
+        // 不能绕过校验用结构体字面量塞非法数据。
         //
-        // This proves that `Ticket::new` is now the only way to get a `Ticket` instance.
-        // It's impossible to create a ticket with an illegal title or description!
-        //
-        // TODO: Once you have verified that the below does not compile,
-        //   comment the lines out to move on to the next exercise!
+        // TODO: 确认无法编译后，注释掉下面几行再继续。
         let ticket = Ticket {
             title: "A title".into(),
             description: "A description".into(),

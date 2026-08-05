@@ -1,7 +1,5 @@
-// TODO: based on what we just learned about ownership, it sounds like immutable references
-//   are a good fit for our accessor methods.
-//   Change the existing implementation of `Ticket`'s accessor methods to take a reference
-//   to `self` as an argument, rather than taking ownership of it.
+// TODO: 结合刚学的所有权：访问器更适合用不可变引用。
+//   请把现有 getter 从「拿走 self 所有权」改为「借用 &self」。
 
 pub struct Ticket {
     title: String,
@@ -54,9 +52,7 @@ mod tests {
     #[test]
     fn works() {
         let ticket = Ticket::new("A title".into(), "A description".into(), "To-Do".into());
-        // If you change the signatures as requested, this should compile:
-        // we can call these methods one after the other because they borrow `self`
-        // rather than taking ownership of it.
+        // 若签名已按要求改为借用 self，则可连续调用这些方法：
         assert_eq!(ticket.title(), "A title");
         assert_eq!(ticket.description(), "A description");
         assert_eq!(ticket.status(), "To-Do");

@@ -1,13 +1,12 @@
-// TODO: Define a new `Order` type.
-//   It should keep track of three pieces of information: `product_name`, `quantity`, and `unit_price`.
-//   The product name can't be empty and it can't be longer than 300 bytes.
-//   The quantity must be strictly greater than zero.
-//   The unit price is in cents and must be strictly greater than zero.
-//   Order must include a method named `total` that returns the total price of the order.
-//   Order must provide setters and getters for each field.
+// TODO: 定义新类型 `Order`。
+//   需要跟踪：`product_name`、`quantity`、`unit_price`。
+//   - 商品名不能为空，且不能超过 300 字节
+//   - 数量必须严格大于 0
+//   - 单价以「分」为单位，必须严格大于 0
+//   - 提供 `total` 方法返回订单总价
+//   - 为每个字段提供 getter 与 setter
 //
-// Tests are located in a different place this time—in the `tests` folder.
-// The `tests` folder is a special location for `cargo`. It's where it looks for **integration tests**.
-// Integration here has a very specific meaning: they test **the public API** of your project.
-// You'll need to pay attention to the visibility of your types and methods; integration
-// tests can't access private or `pub(crate)` items.
+// 测试在 `tests` 目录（集成测试）。
+// `tests` 是 Cargo 查找**集成测试**的特殊位置：
+// 它们只测试你的**公共 API**。
+// 请注意类型与方法的可见性；集成测试无法访问私有或 `pub(crate)` 项。
