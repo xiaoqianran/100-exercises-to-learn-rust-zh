@@ -75,7 +75,7 @@ NOTICE.md                  # 署名与许可说明
 | 3 | `03_ticket_v1` | 结构体与所有权 | 完整 |
 | 4 | `04_traits` | Trait | 完整 |
 | 5 | `05_ticket_v2` | 枚举与错误处理 | 完整 |
-| 6 | `06_ticket_management` | 集合与迭代器 | 骨架 |
+| 6 | `06_ticket_management` | 集合与迭代器 | 完整 |
 | 7 | `07_threads` | 线程与并发 | 骨架 |
 | 8 | `08_futures` | 异步 | 骨架 |
 
