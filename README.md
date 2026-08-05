@@ -73,7 +73,7 @@ NOTICE.md                  # 署名与许可说明
 | 1 | `01_intro` | 入门与语法 | 完整 |
 | 2 | `02_basic_calculator` | 整数/变量/分支/循环/溢出 | 完整 |
 | 3 | `03_ticket_v1` | 结构体与所有权 | 完整 |
-| 4 | `04_traits` | Trait | 骨架 |
+| 4 | `04_traits` | Trait | 完整 |
 | 5 | `05_ticket_v2` | 枚举与错误处理 | 骨架 |
 | 6 | `06_ticket_management` | 集合与迭代器 | 骨架 |
 | 7 | `07_threads` | 线程与并发 | 骨架 |
