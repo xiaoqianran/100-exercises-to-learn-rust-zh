@@ -1,20 +1,7 @@
-# Mutable indexing
+# IndexMut
 
-`Index` allows read-only access. It doesn't let you mutate the value you
-retrieved.
+`&mut store[id]` 需要 `IndexMut`。
 
-## `IndexMut`
-
-If you want to allow mutability, you need to implement the `IndexMut` trait.
-
-```rust
-// Slightly simplified
-pub trait IndexMut<Idx>: Index<Idx>
-{
-    // Required method
-    fn index_mut(&mut self, index: Idx) -> &mut Self::Output;
-}
+```bash
+cargo test -p index_mut
 ```
-
-`IndexMut` can only be implemented if the type already implements `Index`,
-since it unlocks an _additional_ capability.
