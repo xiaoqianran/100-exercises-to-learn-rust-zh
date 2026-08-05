@@ -1,17 +1,15 @@
-// Given a number `n`, return the `n+1`th number in the Fibonacci sequence.
+// 给定 `n`，返回斐波那契数列的第 `n+1` 项（从 0 起算下标 n）。
 //
-// The Fibonacci sequence is defined as follows:
+// 定义：
+// - 第 1 个数为 0
+// - 第 2 个数为 1
+// - 之后每一项为前两项之和
 //
-// - The first number of the sequence is 0.
-// - The second number of the sequence is 1.
-// - Every subsequent number is the sum of the two preceding numbers.
+// 序列：0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 //
-// So the sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
-//
-// We expect `fibonacci(0)` to return `0`, `fibonacci(1)` to return `1`,
-// `fibonacci(2)` to return `1`, and so on.
+// 期望：`fibonacci(0)==0`，`fibonacci(1)==1`，`fibonacci(2)==1`，……
 pub fn fibonacci(n: u32) -> u32 {
-    // TODO: implement the `fibonacci` function
+    // TODO: 在此填写字段: implement the `fibonacci` function
     //
     // Hint: use a `Vec` to memoize the results you have already calculated
     // so that you don't have to recalculate them several times.

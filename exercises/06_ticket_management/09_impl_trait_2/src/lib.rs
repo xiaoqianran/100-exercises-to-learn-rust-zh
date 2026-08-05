@@ -1,5 +1,4 @@
-// TODO: Rework the signature of `TicketStore::add_ticket` to use a generic type parameter rather
-//  than `impl Trait` syntax.
+// TODO: 将 `add_ticket` 签名从 `impl Trait` 改为泛型类型参数写法。
 
 use ticket_fields::{TicketDescription, TicketTitle};
 

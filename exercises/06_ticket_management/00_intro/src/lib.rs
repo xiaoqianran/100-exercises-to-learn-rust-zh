@@ -1,5 +1,5 @@
 fn intro() -> &'static str {
-    // TODO: fix me 👇
+    // TODO: 在此填写字段: 修复下面这一行 👇
     "I'm ready to __!"
 }
 

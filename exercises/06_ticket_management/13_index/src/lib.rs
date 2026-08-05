@@ -1,4 +1,4 @@
-// TODO: Implement `Index<&TicketId>` and `Index<TicketId>` for `TicketStore`.
+// TODO: 为 `TicketStore` 实现 `Index<&TicketId>` 与 `Index<TicketId>`。
 
 use ticket_fields::{TicketDescription, TicketTitle};
 

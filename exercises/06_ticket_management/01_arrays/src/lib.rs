@@ -1,7 +1,7 @@
-// TODO: Flesh out the `WeekTemperatures` struct and its method implementations to pass the tests.
+// TODO: 完善 `WeekTemperatures` 结构体及其方法实现，使测试通过。
 
 pub struct WeekTemperatures {
-    // TODO
+    // TODO: 在此填写字段
 }
 
 pub enum Weekday {
