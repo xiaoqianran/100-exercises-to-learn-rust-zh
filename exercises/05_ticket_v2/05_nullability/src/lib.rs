@@ -1,4 +1,4 @@
-// TODO: Implement `Ticket::assigned_to` using `Option` as the return type.
+// TODO: 实现 `Ticket::assigned_to`，返回类型使用 `Option`。
 
 #[derive(Debug, PartialEq)]
 struct Ticket {

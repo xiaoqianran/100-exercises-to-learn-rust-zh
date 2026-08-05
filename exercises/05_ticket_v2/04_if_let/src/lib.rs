@@ -5,8 +5,7 @@ enum Shape {
 }
 
 impl Shape {
-    // TODO: Implement the `radius` method using
-    //  either an `if let` or a `let/else`.
+    // TODO: 使用 `if let` 或 `let/else` 实现 `radius` 方法。
     pub fn radius(&self) -> f64 {
         todo!()
     }

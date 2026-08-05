@@ -1,5 +1,5 @@
-// TODO: Implement `TryFrom<String>` and `TryFrom<&str>` for the `Status` enum.
-//  The parsing should be case-insensitive.
+// TODO: 为 `Status` 实现 `TryFrom<String>` 与 `TryFrom<&str>`。
+//  解析应大小写不敏感。
 
 pub enum Status {
     ToDo,
