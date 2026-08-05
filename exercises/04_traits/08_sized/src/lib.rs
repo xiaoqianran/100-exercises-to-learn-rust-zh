@@ -1,7 +1,7 @@
 pub fn example() {
-    // Trying to get the size of a str (or any other DST)
-    // via `std::mem::size_of` will result in a compile-time error.
+    // 试图对 str（或任何 DST）使用 `std::mem::size_of`
+    // 会在编译期报错。
     //
-    // TODO: Comment out the following line and move on to the next exercise.
+    // TODO: 注释掉下面一行，然后进入下一题。
     std::mem::size_of::<str>();
 }

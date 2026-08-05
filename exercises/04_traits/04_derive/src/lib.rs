@@ -1,12 +1,11 @@
-// TODO: A (derivable) trait implementation is missing for this exercise to compile successfully.
-//   Fix it!
+// TODO: 还缺一个（可 derive 的）trait 实现，才能顺利编译。
+//   请补上！
 //
-// # `Debug` primer
+// # `Debug` 入门
 //
-// `Debug` returns a representation of a Rust type that's suitable for debugging (hence the name).
-// `assert_eq!` requires `Ticket` to implement `Debug` because, when the assertion fails, it tries to
-// print both sides of the comparison to the terminal.
-// If the compared type doesn't implement `Debug`, it doesn't know how to represent them!
+// `Debug` 提供适合调试的类型表示。
+// `assert_eq!` 要求 `Ticket` 实现 `Debug`：断言失败时要在终端打印两侧的值。
+// 若类型没有 `Debug`，就不知道如何显示它们！
 
 #[derive(PartialEq)]
 struct Ticket {

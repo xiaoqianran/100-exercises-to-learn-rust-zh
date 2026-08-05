@@ -1,17 +1,12 @@
-// TODO: Define a new trait, `Power`, that has a method `power` that raises `self`
-//  to the power of `n`.
-//  The trait definition and its implementations should be enough to get
-//  the tests to compile and pass.
+// TODO: 定义新 trait `Power`，方法 `power` 计算 `self` 的 `n` 次幂。
+//  trait 定义及其实现应足以让测试编译并通过。
 //
-// Recommendation: you may be tempted to write a generic implementation to handle
-// all cases at once. However, this is fairly complicated and requires the use of
-// additional crates (i.e. `num-traits`).
-// Even then, it might be preferable to use a simple macro instead to avoid
-// the complexity of a highly generic implementation. Check out the
-// "Little book of Rust macros" (https://veykril.github.io/tlborm/) if you're
-// interested in learning more about it.
-// You don't have to though: it's perfectly okay to write three separate
-// implementations manually. Venture further only if you're curious.
+// 建议：你可能想写一个包打天下的泛型实现，但那相当复杂，
+// 往往还要额外 crate（如 `num-traits`）。
+// 即便如此，有时用简单宏比高度泛化更合适。
+// 若感兴趣可读《Little book of Rust macros》：
+// https://veykril.github.io/tlborm/
+// 当然也可以老老实实写三个独立 impl——好奇再深入即可。
 
 #[cfg(test)]
 mod tests {

@@ -1,7 +1,6 @@
-// Define a trait named `IsEven` that has a method `is_even` that returns a `true` if `self` is
-// even, otherwise `false`.
+// 定义 trait `IsEven`：方法 `is_even` 在 `self` 为偶数时返回 true，否则 false。
 //
-// Then implement the trait for `u32` and `i32`.
+// 然后为 `u32` 与 `i32` 实现该 trait。
 
 #[cfg(test)]
 mod tests {
