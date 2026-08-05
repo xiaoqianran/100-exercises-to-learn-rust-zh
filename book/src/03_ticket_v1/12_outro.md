@@ -1,5 +1,11 @@
-# Wrapping up
+# 本章小结
 
-We've covered a lot of foundational Rust concepts in this chapter.\
-Before moving on, let's go through one last exercise to consolidate what we've learned.
-You'll have minimal guidance this time—just the exercise description and the tests to guide you.
+本章串联了结构体、校验、模块、可见性、封装、所有权与内存基础。
+
+最后一题请实现 `Order`（综合练习），并通过 **集成测试**（`tests/` 目录）：集成测试只消费**公共 API**。
+
+```bash
+cargo test -p outro_02
+```
+
+详见 `exercises/03_ticket_v1/12_outro/教学.md`。
