@@ -1,7 +1,6 @@
-// TODO: the `echo` server uses non-async primitives.
-//  When running the tests, you should observe that it hangs, due to a
-//  deadlock between the caller and the server.
-//  Use `spawn_blocking` inside `echo` to resolve the issue.
+// TODO: `echo` 使用了非异步原语。
+//  跑测试时应观察到挂起（调用方与服务器死锁）。
+//  在 `echo` 内使用 `spawn_blocking` 解决。
 use std::io::{Read, Write};
 use tokio::net::TcpListener;
 

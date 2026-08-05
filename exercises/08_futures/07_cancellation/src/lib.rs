@@ -1,5 +1,5 @@
-// TODO: fix the `assert_eq` at the end of the tests.
-//  Do you understand why that's the resulting output?
+// TODO: 修正测试末尾的 `assert_eq`。
+//  你理解为什么是那样的输出吗？
 use std::time::Duration;
 use tokio::io::AsyncReadExt;
 use tokio::net::TcpListener;

@@ -1,15 +1,12 @@
 use tokio::net::TcpListener;
 
-// TODO: write an echo server that accepts incoming TCP connections and
-//  echoes the received data back to the client.
-//  `echo` should not return when it finishes processing a connection, but should
-//  continue to accept new connections.
+// TODO: 编写 echo 服务器：接受 TCP 连接并将收到的数据回显给客户端。
+//  处理完一个连接后不要 return，应继续 accept 新连接。
 //
-// Hint: you should rely on `tokio`'s structs and methods to implement the echo server.
-// In particular:
-// - `tokio::net::TcpListener::accept` to process the next incoming connection
-// - `tokio::net::TcpStream::split` to obtain a reader and a writer from the socket
-// - `tokio::io::copy` to copy data from the reader to the writer
+// 提示：使用 tokio 的类型与方法：
+// - `TcpListener::accept` 处理下一个入站连接
+// - `TcpStream::split` 得到 reader/writer
+// - `tokio::io::copy` 从 reader 拷到 writer
 pub async fn echo(listener: TcpListener) -> Result<(), anyhow::Error> {
     todo!()
 }

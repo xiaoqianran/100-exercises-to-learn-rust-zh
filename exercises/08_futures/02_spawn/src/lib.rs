@@ -1,8 +1,8 @@
 use tokio::net::TcpListener;
 
-// TODO: write an echo server that accepts TCP connections on two listeners, concurrently.
-//  Multiple connections (on the same listeners) should be processed concurrently.
-//  The received data should be echoed back to the client.
+// TODO: 在两个 listener 上并发接受 TCP 连接的 echo 服务。
+//  同一 listener 上的多个连接也应并发处理。
+//  收到的数据回显给客户端。
 pub async fn echoes(first: TcpListener, second: TcpListener) -> Result<(), anyhow::Error> {
     todo!()
 }
